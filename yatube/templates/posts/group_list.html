@@ -1,0 +1,14 @@
+<!DOCTYPE html> <!-- Используется html 5 версии -->
+{% extends "base.html" %}
+<html lang="ru"> <!-- Язык сайта - русский -->
+{% block title %}
+  <head>
+    <title>{{text}}</title>
+  </head>
+{% endblock %}
+  <body>
+  {% block content %}
+  {{text}}
+  {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html> <!-- Используется html 5 версии -->
+{% extends "base.html" %}
+<html lang="ru"> <!-- Язык сайта - русский -->
+{% block title%}
+<title>{{text}}</title>
+{% endblock %}
+  <body>
+  {% block content %}
+  {{text}}
+  <p><a href = "{% url 'posts:group' %}">Группы</a></p>
+  {% endblock %}
+    <!-- Использованы классы бустрапа: -->
+    <!-- border-top: создаёт тонкую линию сверху блока -->
+    <!-- text-center: выравнивает текстовые блоки внутри блока по центру -->
+    <!-- py-3: контент внутри размещается с отступом сверху и снизу -->
+
+  </body>
+</html>
